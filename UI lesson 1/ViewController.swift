@@ -16,6 +16,14 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemGreen
     }
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textFIeld: UITextField!
+    @IBOutlet weak var button: UIButton!
 
+
+    @IBAction func buttonAction(_ sender: Any) {
+        label.text = textFIeld.text
+        textFIeld.text = ""
+    }
 }
 

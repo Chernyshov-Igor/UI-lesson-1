@@ -29,6 +29,9 @@
                                         <rect key="frame" x="40.5" y="144.5" width="62.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Тырк!"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyp-cM-NRC"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя Фамилия" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-gG-ReR">
                                         <rect key="frame" x="11" y="299.5" width="121.5" height="34"/>
@@ -45,6 +48,11 @@
                             <constraint firstItem="Rsg-vJ-6Gp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o5d-wF-gUc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="c0X-Vr-taL" id="b3p-8R-WD8"/>
+                        <outlet property="label" destination="JUU-Pk-s2W" id="3x5-VL-l5h"/>
+                        <outlet property="textFIeld" destination="b9A-gG-ReR" id="mAC-8o-TcI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
