@@ -22,8 +22,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func buttonAction(_ sender: Any) {
-        label.text = textFIeld.text
-        textFIeld.text = ""
+        if textFIeld.text != "" {
+            label.text = textFIeld.text
+            textFIeld.text = nil
+        }
     }
 }
 
