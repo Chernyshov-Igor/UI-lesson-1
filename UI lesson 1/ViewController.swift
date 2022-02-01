@@ -9,11 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+    }
 
+    override func viewDidLoad() {
         view.backgroundColor = .systemGreen
+        print("viewDidLoad")
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+
+    override func viewWillLayoutSubviews() {
+        print("viewWillLayoutSubviews")
+    }
+
+    override func viewDidLayoutSubviews() {
+        print("viewDidLayoutSubviews")
     }
 
     @IBOutlet weak var label: UILabel!
@@ -27,5 +43,6 @@ class ViewController: UIViewController {
             textFIeld.text = nil
         }
     }
+
 }
 
